@@ -3,6 +3,7 @@ import { MainComponent } from './layouts/main/main.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { TodosComponent } from './pages/todos/todos.component';
 
 export const routes: Routes = [
   {
@@ -21,6 +22,10 @@ export const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent,
+      },
+      {
+        path: 'todos',
+        component: TodosComponent,
       },
     ],
   },
