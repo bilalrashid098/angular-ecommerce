@@ -1,0 +1,27 @@
+header {
+  padding: 1rem;
+
+  nav {
+    background: #145290;
+    background: linear-gradient(90deg, #145290 50%, #1a70e8 100%);
+    color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.home-banner {
+  padding: 3rem 2rem;
+  background: #145290;
+  background: linear-gradient(90deg, #145290 50%, #1a70e8 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  input {
+    color: #fff;
+    border-color: #fff;
+
+    &:focus {
+      outline: none;
+      border-color: #fff;
+    }
+  }
+}
