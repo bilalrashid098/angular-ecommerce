@@ -1,3 +1,15 @@
-@for (todo of todos(); track todo.id) {
-<p>{{ todo.title }}</p>
-}
+<div class="container">
+  <!-- Old method for if statement -->
+  <!-- <p *ngIf="loading()">Loading...</p> -->
+
+  <!-- New method for if statment -->
+  @if (loading()) {
+  <p>Loading...</p>
+  }
+
+  <ul class="todos">
+    @for (todo of todos(); track todo.id) {
+    <app-todo-item (todoToggled)="updateTodo($event)" [todo]="todo" />
+    }
+  </ul>
+</div>

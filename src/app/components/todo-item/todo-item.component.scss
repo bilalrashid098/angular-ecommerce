@@ -1,0 +1,31 @@
+.todos {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    margin-bottom: 0.5rem;
+
+    label {
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      width: 1.5rem;
+      height: 1.5rem;
+      accent-color: #145290;
+    }
+
+    &-completed {
+      text-decoration: line-through;
+
+      label {
+        background-color: #82cc0a;
+      }
+
+      input[type="checkbox"] {
+        accent-color: #82cc0a;
+      }
+    }
+  }
+}
